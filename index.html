@@ -26,7 +26,7 @@
     <div class="bg">
     </div>
     <div class="main" id="games">
-        <div class="game-item" v-for="game in games" @click="play(game)">
+        <div class="game-item mdui-ripple" v-for="game in games" @click="play(game)">
             <div class="game-img" style="display: none;" :style="'background-image:url('+game.imgSrc+');display:block;'">
             </div>
             <div class="game-title">
