@@ -1,0 +1,127 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-cn">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1, user-scalable=no">
+<title>Base64,Base64在线加密,在线解密_</title>
+<meta name="keywords" content="Base64,Base64在线加密,Base64在线解密、转换," />
+<link type="text/css" rel="stylesheet" href="https://www.qvdv.com/public/layui/css/layui.css">
+<link href="css/tools2019-01-11.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/base64.js"></script>
+<style type="text/css">
+form textarea{margin:0 auto;padding:2%;width:95%;overflow:hidden;}
+form p{padding-top:1%;text-align:center;}
+p{line-height:25px;}
+</style>
+</head>
+<body>
+<!--[if lt IE 8]>
+  <script src="https://www.qvdv.com/public/js/jquery1.7.2.min.js" type="text/javascript"></script>
+  <script src="https://www.qvdv.com/public/ie_error/ie_error.js" type="text/javascript"></script>
+  <link rel="stylesheet" type="text/css" href="https://www.qvdv.com/public/ie_error/ie_error.css" />
+<![endif]-->
+<header>
+
+</header><div class="main">
+	<div class="center">
+		<h2 class="t-c">Base64加密、解密</h2>
+	</div>
+<form onsubmit="return false;"class="layui-form layui-form-pane">
+	<div class="layui-tab layui-tab-card center" lay-filter="code">
+			<ul class="layui-tab-title">
+				<li class="layui-this">Base64在线加密</li>
+				<li>Base64在线解密</li>
+			</ul>
+			<div class="layui-tab-content">
+				<div class="layui-tab-item layui-show">
+					<div class="layui-form-text">
+						<label class="layui-form-label">这里输入您要加密的字符</label>
+						<div class="layui-input-block">
+							<textarea name="code" placeholder="" class="layui-textarea" id="code1"></textarea>
+						</div>
+					</div><br />
+					<div class="layui-form-item">
+						<div class="layui-btn-container">
+							<button type="button" id="encode" class="layui-btn layui-btn-normal" lay-submit lay-filter="sub">加密</button>
+						</div>
+					</div>
+					<div class="layui-form-text">
+						<label class="layui-form-label">加密后的字符</label>
+						<div class="layui-input-block">
+							<textarea name="code1-1" placeholder="" class="layui-textarea" id="code1-1"></textarea>
+						</div>
+					</div>
+				</div>
+				<div class="layui-tab-item">
+					<div class="layui-form-text">
+						<label class="layui-form-label">这里输入您Base64加密过的字符</label>
+						<div class="layui-input-block">
+							<textarea name="code2" placeholder="" class="layui-textarea" id="code2"></textarea>
+						</div>
+					</div><br />
+					<div class="layui-form-item">
+						<div class="layui-btn-container">
+							<button type="button" id="decode" class="layui-btn layui-btn-normal" lay-submit lay-filter="sub">解密</button>
+						</div>
+					</div>
+					<div class="layui-form-text">
+						<label class="layui-form-label">解密还原后的字符</label>
+						<div class="layui-input-block">
+							<textarea name="code2-2" placeholder="" class="layui-textarea" id="code2-2"></textarea>
+						</div>
+					</div>
+				</div>
+		</div>
+	</div>	
+</form>
+	<hr>
+</div>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="https://www.qvdv.com/public/layui/layui.js"></script>
+<script type="text/javascript">
+	layui.config({
+		version: 20180212
+		,debug: false
+		,base: ''
+	});
+	layui.use('layer', function(){
+		var layer = layui.layer;
+		$("#menuIco .m").click(function() {
+			$(".bg,#menuIcoL").toggle(100);
+			$("#menuIco .m").toggle(0);
+		});
+	});
+	
+/*导航高亮*/
+                var nav = document.getElementById("menu_nav");
+                var links = nav.getElementsByTagName("li");
+                var lilen = nav.getElementsByTagName("a"); //判断地址
+                var currenturl = document.location.href;
+                var last = 0;
+                for(var i=0;i<links.length;i++)
+                {
+                var linkurl =  lilen[i].getAttribute("href");
+                if(currenturl.indexOf(linkurl)!=-1)
+                {
+                last = i;
+                }
+              }
+         links[last].className = "current";  //高亮代码样式
+</script>
+<script type="text/javascript"> 
+	$(document).ready(function(){
+		layui.use(['form','element'], function(){
+			var form = layui.form;
+			var element = layui.element;
+			$("#encode").click(function(){
+				$("#code1-1").val(encode64($("#code1").val()));
+			});
+			$("#decode").click(function(){
+				$("#code2-2").val(decode64($("#code2").val()));
+			});
+		})
+	})
+</script>
+</body>
+</html>

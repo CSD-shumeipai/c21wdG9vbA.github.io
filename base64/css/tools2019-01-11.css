@@ -1,0 +1,272 @@
+html{
+	font-size:62.5%;
+}
+body {
+	color:#333;
+	font-size: 14px;
+	font-size: 1.4rem;
+	font-family:'Microsoft YaHei',Arial,"å®‹ä½“",Helvetica,sans-serif,Verdana;
+	background-color:#F5F5F5;
+}
+body,ul,ol,li,p,h1,h2,h3,h4,h5,h6,form,fieldset,table,td,img,div,tr {
+	margin:0;
+	padding:0;
+	border:0;
+}
+h1,h2,h3,h4,h5,h6 {
+	margin:0;
+	padding:0;
+	font-size:1.4rem;
+}
+h6 {
+	font-size:16px;
+}
+ul,dl,ol,form,dt,dd {
+	margin:0;
+	padding:0;
+}
+ul li,ol li {
+	list-style-type:none;
+}
+img {
+	border:0;
+	padding:0;
+	margin:0;
+}
+a {
+	text-decoration:none;
+	cursor:pointer;
+}
+a:link,a:visited {
+	color:#000;
+	text-decoration:none;
+}
+a:hover,a:active {
+	color:#F50;
+	text-decoration:none;
+}
+.fl{float: left}
+.fr{float: right}
+.t-c{text-align: center}
+.off{display: none}
+.on{display: block}
+.center{margin: 0 auto;width: 98%!important}
+.center h2{line-height: 3;font-size: 32px;text-overflow:ellipsis; white-space:nowrap; overflow:hidden; }
+.ico {
+	background-image:url(../images/ico.png);
+}
+.header,.menu_nav,.wrapper,.main,.footer {
+	margin:0 auto;
+	width:75%;
+	/*max-width:1000px;*/
+}
+
+.header{}
+.header .logo {
+	float:left;
+	width:13%;
+	max-width: 129px;
+}
+.header .logo img {
+	float:left;
+	width:100%;	
+	height:auto;
+}
+.topAd {
+	float:right;
+	width:85%;
+	height: 88px;
+	overflow:hidden;
+	text-align: right
+}
+
+
+/*å¯¼èˆª*/
+.menu_navcc {
+	clear: both;
+	margin:0 auto;
+	width: 75%;
+	border-bottom:1px solid #F8F6F6
+}
+.menu_nav {
+	position: relative;
+	margin:0 auto;
+	width:100%;
+	height: 48px;
+	line-height: 48px;
+	color:#FFF;
+	background-color: #004BD0;
+	border-bottom: 4px solid #C00
+}
+.menu_nav .nav_content {
+	margin: 0 auto;
+	width: 100%;
+}
+.menu_nav .nav_content li {
+	min-width: 12%;
+	height:48px;
+	margin-left:0%;
+	float:left;
+	line-height:48px;
+	text-align:center;
+	font-size:14px;
+	font-weight:bold;
+}
+.menu_nav .nav_content li a {
+	color:#fff;
+	height:48px;
+	display:block
+}
+
+.menu_nav .nav_content li em {
+	width:35px;
+	height:21px;
+	display:inline-block;
+	position:absolute;
+	top:-20px;
+	left:40px;
+}
+.menu_nav .nav_content li.current a{
+	display:block;
+	color:#fff;
+	background-color: #C00
+}
+.menu_nav .nav_content li a:hover {
+	color:#FFC600;
+}
+#menuIco .layui-icon{
+	padding:0 5%;
+}
+
+#menuIco .layui-icon{
+	cursor: pointer;
+	font-size: 3rem;
+}
+#menuIcoL{
+	display: none;
+	position: absolute;
+	left: 0;
+	top: 48px;
+	z-index: 9999;
+	width:100%;
+	padding:1%;
+	margin-top: .5%;
+	color: #000;
+	background-color:#FFF;
+	border:1px solid #C00;
+	box-sizing:border-box;
+	border-bottom-left-radius: 8px;
+	border-bottom-right-radius: 8px;
+	box-shadow: 0 0 8px 1px #e4e5e6;
+}
+
+
+#menuIcoL dl{
+	width:100%;
+	padding:.5% 0%;
+	line-height: 32px;
+	overflow: hidden;
+	background-color: #FFF;
+	font-weight: normal;
+}
+#menuIcoL dl dt{
+	position: relative;
+	float: left;
+	width: 10%;
+	min-width: 130px;
+	text-align: left;
+	font-size: 1.6rem;
+}
+#menuIcoL dl dt span{
+	position: absolute;
+	top: 0;
+	right: 15%;
+	color:#606060;
+}
+#menuIcoL dl dd{
+	float: left;
+	width:80%;
+	text-align: left;
+}
+#menuIcoL dl dd a{
+	display: inline-block;
+	margin:0 1% 1% 0;
+	padding: 0 5%;
+	height: auto;
+	color:#606060;
+	background-color: #FFF;
+	border:1px solid #DDDADA;
+	border-radius: 4px;
+}
+#menuIcoL dl dd a:hover{
+	color:#F50;
+}
+
+
+
+
+footer{
+}
+.footer {
+	padding: 1% 0;
+	margin-top: 1%;
+	border-top: 2px solid #e6e6e6;
+}
+.footerNav a{
+	margin: 0 1%;
+}
+.footerNav,.Copyright {
+	padding:.5% 0;
+}
+
+
+
+
+
+@media only screen and (max-width:1280px) {
+	.topAd{display: none;}
+	.header .logo{position:inherit}
+}
+@media only screen and (max-width:800px) {
+	.top ul,.header,.menu_navcc,.wrapper,.main,.footer {
+	width:95%;
+}
+	
+	.top,.header,.menu_nav li{
+		display:none;
+	}
+	.menu_navcc{
+		margin-top: 48px;
+	}
+	.bg,#menu_nav{
+		position:fixed;
+		top: 0;
+		right: 0;
+		z-index: 99999;
+		width:100%;
+	}
+	.menu_nav{
+		border-color:#CECECE;
+	}
+	#menuIco,.back{
+		display: block;
+	}
+	#menuIco{
+		width:100%;
+		background-color:#000;
+	}
+	.bg{
+		height:100%;
+		overflow: hidden;
+		background-color:#000;
+		opacity: 0.6
+	}
+	#menuIcoL{
+		top:0;
+		width:85%;
+		height:80vh;
+		overflow-y: auto;
+		border:0;
+		border-bottom-left-radius:0;
+	}
+}

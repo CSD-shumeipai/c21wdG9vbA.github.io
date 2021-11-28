@@ -10,4 +10,10 @@ var gamesData = [ {
 	"name": "兽音译者",
 	"tags": ["文字处理"],
 	"id": "d1eeb899810e4c359805ad860e405847"
+},{
+	"url": "https://toolbox.csdshumeipai.xyz/base64/",
+	"imgSrc": "https://toolbox.csdshumeipai.xyz/imgs/base64.png",
+	"name": "Base64编解码",
+	"tags": ["文字处理"],
+	"id": "d1eeb899810e4c359805ad860e405847"
 }]
