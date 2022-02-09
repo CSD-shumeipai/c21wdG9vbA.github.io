@@ -19,7 +19,7 @@ var gamesData = [ {
 },{
 	"url": "https://toolbox.csdshumeipai.xyz/momo/",
 	"imgSrc": "https://toolbox.csdshumeipai.xyz/imgs/momo.png",
-	"name": 摸摸_动图生成",
+	"name": "摸摸"动图生成",
 	"tags": ["图片处理"],
 	"id": "d1eeb899810e4c359805ad860e405847"
 }]
