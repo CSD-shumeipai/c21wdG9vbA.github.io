@@ -4,30 +4,30 @@
   --fg: #fff;
   --txt: #727272;
   --txt-light: #727272;
-  --link: #3B4CA9;
-  --link-hover: #3B4CA9;
+  --link: #ff4081!important;
+  --link-hover: #ff4081!important;
   --header-txt: #727272;
   --preview-bg: #fff;
   --canvas-bg: #fff;
   --input-bg: #fff;
   --input-border: #D9D9D9;
-  --input-border-hover: #3B4CA9;
-  --input-border-focus: #3B4CA9;
+  --input-border-hover: #ff4081!important;
+  --input-border-focus: #ff4081!important;
   --input-track-bg: #fff;
   --input-switch-bg: #fff;
   --input-switch-bg-active: #fff;
-  --input-switch-fg: #3B4CA9;
-  --input-switch-fg-hover: #3B4CA9;
-  --btn-bg: #3B4CA9;
+  --input-switch-fg: #ff4081!important;
+  --input-switch-fg-hover: #ff4081!important;
+  --btn-bg: #ff4081!important;
   --btn-color: #fff;
-  --btn-border: #3B4CA9;
-  --btn-hover: #354497;
-  --btn-focus: #3B4CA9;
+  --btn-border: #ff4081!important;
+  --btn-hover: #FF5992;
+  --btn-focus: #ff4081!important;
   --btn-focus-outline: rgba(254, 220, 125, 0.5);
-  --shadow-color: #3B4CA9;
+  --shadow-color: #ff4081!important;
   --shadow: 0px 1px 2px var(--shadow-color);
   --icon: "🌝";
-  --error: #3B4CA9;
+  --error: #ff4081!important;
 }
 
 [data-theme=dark] {
@@ -49,7 +49,7 @@
   --input-switch-bg-active: #fed254;
   --input-switch-fg: #fee6a0;
   --input-switch-fg-hover: #fedf87;
-  --btn-bg: #354497;
+  --btn-bg: #FF5992;
   --btn-color: #8b3918;
   --btn-border: #f6b408;
   --btn-hover: #fed254;
