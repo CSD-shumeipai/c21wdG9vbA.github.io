@@ -22,4 +22,10 @@ var gamesData = [ {
 	"name": "摸摸_动图生成",
 	"tags": ["图片处理"],
 	"id": "d1eeb899810e4c359805ad860e405847"
+},{
+	"url": "https://toolbox.csdshumeipai.xyz/video/",
+	"imgSrc": "https://toolbox.csdshumeipai.xyz/imgs/video.png",
+	"name": "影视解析",
+	"tags": ["影音娱乐"],
+	"id": "d1eeb899810e4c359805ad860e405847"
 }]
