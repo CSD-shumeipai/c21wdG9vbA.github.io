@@ -44,7 +44,7 @@ body {
 .title {
     font-size: 36px;
     font-weight: 300;
-    color: #ff4081;
+    color: #502e84;
 }
 
 .main {
@@ -263,7 +263,7 @@ body {
 .sk-cube-grid .sk-cube {
     width: 33%;
     height: 33%;
-    background-color: #ff4081;
+    background-color: #502e84;
     float: left;
     -webkit-animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out;
     animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out;
