@@ -28,4 +28,10 @@ var gamesData = [ {
 	"name": "影视解析",
 	"tags": ["影音娱乐"],
 	"id": "d1eeb899810e4c359805ad860e405847"
+}{
+	"url": "https://toolbox.csdshumeipai.xyz/radio/",
+	"imgSrc": "https://toolbox.csdshumeipai.xyz/imgs/radio.png",
+	"name": "在线广播",
+	"tags": ["影音娱乐"],
+	"id": "d1eeb899810e4c359805ad860e405847"
 }]
