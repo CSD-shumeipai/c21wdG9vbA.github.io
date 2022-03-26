@@ -3,20 +3,18 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <link rel="stylesheet" href="http://cdn.jsdelivr.net/npm/mdui@1.0.2/dist/css/mdui.min.css"/>
-  <script src="http://cdn.jsdelivr.net/npm/mdui@1.0.2/dist/js/mdui.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdui@1.0.2/dist/css/mdui.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/mdui@1.0.2/dist/js/mdui.min.js"></script>
 </head>
 <body>
 
-  <div class="mdui-appbar">
-    <div class="mdui-tab mdui-color-indigo" mdui-tab>
-      <a href="#example3-tab1" class="mdui-center mdui-ripple mdui-ripple-white">央视广播</a>
-      <a href="#example3-tab2" class="mdui-center mdui-ripple mdui-ripple-white">地方广播</a>
+  <div class="mdui-container">
+    <div class="mdui-tab" mdui-tab>
+      <a href="#example1-tab1" class="mdui-ripple">央视广播</a>
+      <a href="#example1-tab2" class="mdui-ripple">地方广播</a>
+      <a href="#example1-tab3" class="mdui-ripple">国际广播</a>
     </div>
-  </div>
-
-  <div class="mdui-container-fluid">
-    <div id="example3-tab1">
+    <div id="example1-tab1" class="mdui-p-a-2">
   <ul class="mdui-list mdui-center" style="max-width: 3600px;">
     <li class="mdui-list-item" mdui-dialog="{target: '#example-1'}">
       <div class="mdui-list-item-avatar"><img src="img/zgzs.jpg"/></div>
@@ -61,13 +59,9 @@
       </div> 
     </li>
   </ul>
-
-  
     </div>
-    <div id="example3-tab2"><br><br><br>
-          <div class="mdui-text-center">未检索"df.m3u8"，请联系站点管理员。</div>
-    </div>
+    <div id="example1-tab2" class="mdui-p-a-2">未检索"df.m3u8"，请联系站点管理员。</div>
+    <div id="example1-tab3" class="mdui-p-a-2">未检索"df.m3u8"，请联系站点管理员。</div>
   </div>
-
 </body>
 </html>
