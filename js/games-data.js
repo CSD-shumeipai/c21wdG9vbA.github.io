@@ -34,4 +34,10 @@ var gamesData = [ {
 	"name": "在线广播",
 	"tags": ["影音娱乐"],
 	"id": "d1eeb899810e4c359805ad860e405847"
+},{
+	"url": "https://toolbox.csdshumeipai.xyz/morse_code/",
+	"imgSrc": "https://toolbox.csdshumeipai.xyz/imgs/morse_code.png",
+	"name": "摩尔斯电码",
+	"tags": ["通讯"],
+	"id": "d1eeb899810e4c359805ad860e405847"
 }]
