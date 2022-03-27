@@ -1,11 +1,8 @@
-
 <!DOCTYPE HTML>
 <html lang="zh-cn">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1, user-scalable=no">
-<link type="text/css" rel="stylesheet" href="https://www.qvdv.com/public/layui/css/layui.css">
-<link href="css/tools2019-01-11.css" rel="stylesheet" type="text/css" />
 <script type="text/javascript" src="js/base64.js"></script>
 <!-- MDUI CSS -->
 <link
@@ -29,57 +26,56 @@ p{line-height:25px;}
 </head>
 <body>
 <body class="mdui-theme-primary-indigo mdui-theme-accent-pink">
-<header>
-
-</header><div class="main">
-<br>
-<form onsubmit="return false;"class="layui-form layui-form-pane">
-	<div class="layui-tab  center" lay-filter="code">
-			<ul class="layui-tab-title">
-				<li class="layui-this mdui-ripple">Base64在线加密</li>
-				<li class="layui-this mdui-ripple">Base64在线解密</li>
-			</ul>
-			<div class="layui-tab-content">
-				<div class="layui-tab-item layui-show">
-					<div class="layui-form-text">
+<div>
+<form onsubmit="return false;"class="">
+  <div class="mdui-container">
+    <div class="mdui-tab" mdui-tab>
+      <a href="#example1-tab1" class="mdui-ripple">加密</a>
+      <a href="#example1-tab2" class="mdui-ripple">解密</a>
+    </div>
+    <div id="example1-tab1" class="mdui-p-a-2">
+				<div class="">
+					<div class="">
 						<div class="mdui-textfield">
-							<textarea name="code" placeholder="这里输入您要加密的字符" class="mdui-textfield-input" id="code1"></textarea>
+							<textarea name="code" placeholder="这里输入您要加密的字符" class="mdui-textfield-input" rows="4" id="code1"></textarea>
 						</div>
-					</div><br />
-					<div class="layui-form-item">
-						<div class="layui-btn-container">
+					</div>
+					<div class="">
+						<div class=""><br>
 							<button type="button" id="encode" class="mdui-btn mdui-btn-raised mdui-ripple mdui-color-theme-accent" lay-submit lay-filter="sub">加密</button>
 						</div>
 					</div>
-					<div class="layui-form-text">
+					<div class="">
 						<div class="mdui-textfield">
-							<textarea name="code1-1" placeholder="加密后的字符" class="mdui-textfield-input" id="code1-1"></textarea>
+							<textarea name="code1-1" placeholder="加密后的字符" class="mdui-textfield-input" rows="4" id="code1-1"></textarea>
 						</div>
 					</div>
 				</div>
-				<div class="layui-tab-item">
-					<div class="layui-form-text">
+    </div>
+    <div id="example1-tab2" class="mdui-p-a-2">
+				<div class="">
+					<div class="">
 						<div class="mdui-textfield">
-							<textarea name="code2" placeholder="这里输入您Base64加密过的字符" class="mdui-textfield-input" id="code2"></textarea>
+							<textarea name="code2" placeholder="这里输入您Base64加密过的字符" class="mdui-textfield-input" rows="4" id="code2"></textarea>
 						</div>
 					</div><br />
-					<div class="layui-form-item">
-						<div class="layui-btn-container">
+					<div class="">
+						<div class="">
 							<button type="button" id="decode" class="mdui-btn mdui-btn-raised mdui-ripple mdui-color-theme-accent" lay-submit lay-filter="sub">解密</button>
-						</div>
+						</div><br>
 					</div>
-					<div class="layui-form-text">
-						<div class="layui-input-block">
-							<textarea name="code2-2" placeholder="解密还原后的字符" class="mdui-textfield-input" id="code2-2"></textarea>
+					<div class="">
+						<div class="">
+							<textarea name="code2-2" placeholder="解密还原后的字符" class="mdui-textfield-input" rows="4" id="code2-2"></textarea>
 						</div>
 					</div>
 				</div>
-		</div>
-	</div>	
+	</div>
+
+  </div>	
 </form>
-	<hr>
 </div>
-<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="http://lib.baomitu.com/jquery/1.9.1/jquery.js"></script>
 <script type="text/javascript" src="https://www.qvdv.com/public/layui/layui.js"></script>
 <script type="text/javascript">
 	layui.config({
