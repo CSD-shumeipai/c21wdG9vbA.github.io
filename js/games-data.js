@@ -40,4 +40,10 @@ var gamesData = [ {
 	"name": "摩尔斯电码",
 	"tags": ["通讯"],
 	"id": "d1eeb899810e4c359805ad860e405847"
+},{
+	"url": "https://toolbox.csdshumeipai.xyz/proxy/",
+	"imgSrc": "https://toolbox.csdshumeipai.xyz/imgs/proxy.png",
+	"name": "网页代理",
+	"tags": ["网络工具"],
+	"id": "d1eeb899810e4c359805ad860e405847"
 }]
